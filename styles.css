@@ -32,13 +32,39 @@ body
   background: red;
 }
 
+#containerblack {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background: lightgrey;
+  margin: 20px;
+}
+#animateblack {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: black;
+}
+
+.animations {
+  display: inline-block;
+}
+
+button {
+  padding: 10px;
+
+  width: 100px;
+  height: 60px;
+
+  margin: 0 1.5% 24px 1.5%;
+}
 
 nav {
     margin: 100px 0;
     background-color:#14253d;
 }
 
-/* убираем отступы и поля, а также list-style для "ul", 
+/* убираем отступы и поля, а также list-style для "ul",
  * и добавляем "position:relative" */
 nav ul {
     padding:0;
@@ -86,4 +112,25 @@ nav ul ul li {
   float:none;
   display:list-item;
   position: relative;
+}
+
+.todo_btn {
+  background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 16px;
+    box-shadow:0 1px 2px #5e5d5b;
+}
+
+.todo {
+  margin:20px;
+  background-color: lightgrey;
+  width: 300px;
+  length:40px
 }

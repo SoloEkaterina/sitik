@@ -11,22 +11,22 @@
 
 <body>
 
-
+<!--menu HTML and CSS only-->
 <nav>
     <ul>
-            <li><a href="#">Homeworks</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="page2.html" target="_self"> JS frameworks</a>
+            <li><a href="page2.html" target="_self">Elements</a></li>
+            <li><a href="page0.html" target="_self">About</a></li>
+            <li><a href="#"> JS frameworks</a>
               <ul>
-                  <li><a href="#">React</a></li>
-                  <li><a href="#">Vue</a></li>
-                  <li><a href="#">JQuery</a></li>
+                  <li><a href="page4.html" target="_self">React</a></li>
+                  <li><a href="page3.html" target="_self">Vue</a></li>
+                  <li><a href="page5.html" target="_self">JQuery</a></li>
               </ul>
-            </li>  
+            </li>
     </ul>
 </nav>
-  
 
+<!--SIMPLE HTML TAGS-->
   <div class="header">
     <h1> <a href="/">sitik sitik!!</a></h1>
     <h2>this is the random study stuff to look how does webapp works</h2>
@@ -38,8 +38,27 @@
     <p> <strong>lol</strong> v atome mozhno nazhat na tab chtobi prostavit skobki tegov<span class="color_love">love love</span> </p>
  </div>
 
-<!-- <button onclick="changeColor()">Set background color</button> -->
+ <form action="">
+   fist name: <br>
+   <input type = "text" name="firstname" value="Masha">
+   <br>
+   Last name: <br>
+   <input type = "text" name="lastname">
+ </form>
 
+
+<!--video-->
+ <iframe width="420" height="345"
+src = "https://www.youtube.com/embed/p8M69RBFJNc">
+ </iframe>
+
+<!--heart svg-->
+ <svg class="spin" width="300" height="230">
+    <polygon style="stroke-linejoin:miter; stroke:black; stroke-width:5; fill: red;"
+points="100 100, 150 150, 200 100, 200 75, 185 60, 165 60, 150 75, 135 60, 115 60, 100 75, 100 100" />
+</svg>
+
+<!--for DOM learn-->
  <div class="content2">
    <p> <strong>lol</strong> v atome mozhno nazhat na ta </p>
  </div>
@@ -48,6 +67,7 @@
 </body>
 <button onclick="myFunction()">Try it</button>
 
+<!--photo slider (array in js)-->
 <div>
   <button onclick="prev()"> prev</button>
   <img id = "slider" src ="https://bipbap.ru/wp-content/uploads/2017/10/0_8eb56_842bba74_XL-640x400.jpg"
@@ -56,13 +76,21 @@
   <button onclick="next()"> next</button>
 </div>
 
-<!--анимация-->
+<!--анимация (animation code in js)-->
 <h2>Animations</h2>
-<div id ="container">
-    <div id ="animate"></div>
+<div class="animations">
+  <div class="animations" id ="container">
+      <div id ="animate"></div>
+      <button onclick="myMove()">click to move the red square</button>
+  </div>
+  <div class="animations" id ="containerblack">
+    <div id ="animateblack"></div>
+    <button onclick="myMoveblack()">click to move the black square</button>
+  </div>
 </div>
 
-<button onclick="myMove()">click to move the red square</button>
+<!--js Elements study W3C-->
+
 
 
 

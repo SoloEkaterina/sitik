@@ -1,3 +1,4 @@
+//свойства функции через this
 function person(name, color) {
     this.color=color;
     this.name=name;
@@ -11,6 +12,8 @@ p.changeName("amy");
 console.log(p.name);
 console.log(p.color);
 
+
+//возращает в консоль число год - заданный возраст
 function lol(age, color) {
     this.age=age;
     this.color=color;
@@ -50,6 +53,8 @@ var united = c1.concat(c2);
 var answer = Math.sqrt(n);
 alert("The square root of "+ n + " is " + answer);*/
 
+
+//вывод даты
 var d = Date();
 console.log(d);
 
@@ -91,83 +96,58 @@ function prev() {
     slider.src = images[num];
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//анимация
+function myMove() {
+     var elem = document.getElementById("animate");
+     var pos = 0;
+     var id = setInterval(frame, 5);
+     function frame() {
+       if (pos == 150) {
+         clearInterval(id);
+       } else {
+         pos++;
+         elem.style.top = pos + "px";
+         elem.style.left = pos + "px";
+       }
+     }
+}
+
+
+function myMoveblack() {
+    var elem = document.getElementById("animateblack");
+    var pos = 0;
+    var id = setInterval(frame, 5);
+    function frame() {
+      if (pos == 150) {
+        clearInterval(id);
+      } else {
+        pos++;
+        elem.style.top = pos + "px";
+        elem.style.left = pos + "px";
+      }
+    }
+}
+
+
+function addItem() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+
+
+//page 2 to do list
